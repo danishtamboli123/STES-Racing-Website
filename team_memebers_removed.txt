@@ -1,0 +1,119 @@
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 offset-sm-0 offset-xl-0 item">
+                    <div class="box" style="background-image:url(&quot;assets/img/&quot;);border-radius:0.5rem;">
+                        <div class="cover" style="background-color:rgba(48,48,48,0.75);padding-top:50%;">
+                            <h3 class="name">Jatan Shah</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 offset-xl-0 item">
+                    <div class="box" style="background-image:url(&quot;assets/img/&quot;);border-radius:0.5rem;">
+                        <div class="cover" style="background-color:rgba(48,48,48,0.75);padding-top:50%;">
+                            <h3 class="name">Pathik Bokade</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 item">
+                    <div class="box" style="background-image:url(&quot;assets/img/&quot;);border-radius:0.5rem;">
+                        <div class="cover" style="background-color:rgba(48,48,48,0.75);padding-top:50%;">
+                            <h3 class="name">Yash Bhide</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 offset-xl-0 item">
+                    <div class="box" style="background-image:url(&quot;assets/img/&quot;);border-radius:0.5rem;">
+                        <div class="cover" style="background-color:rgba(48,48,48,0.75);padding-top:50%;">
+                            <h3 class="name">Rifat Bhaldar</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 offset-xl-0 item">
+                    <div class="box" style="background-image:url(&quot;assets/img/&quot;);border-radius:0.5rem;">
+                        <div class="cover" style="background-color:rgba(48,48,48,0.75);padding-top:50%;">
+                            <h3 class="name">Akshat Kaushal</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 item">
+                    <div class="box" style="background-image:url(&quot;assets/img/&quot;);border-radius:0.5rem;">
+                        <div class="cover" style="background-color:rgba(48,48,48,0.75);padding-top:50%;">
+                            <h3 class="name">Parth Jade</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 item">
+                    <div class="box" style="background-image:url(&quot;assets/img/&quot;);border-radius:0.5rem;">
+                        <div class="cover" style="background-color:rgba(48,48,48,0.75);padding-top:50%;">
+                            <h3 class="name">Shubham Sonawane</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 item">
+                    <div class="box" style="background-image:url(&quot;assets/img/&quot;);border-radius:0.5rem;">
+                        <div class="cover" style="background-color:rgba(48,48,48,0.75);padding-top:50%;">
+                            <h3 class="name">Aniket Junnarkar</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 item">
+                    <div class="box" style="background-image:url(&quot;assets/img/&quot;);border-radius:0.5rem;">
+                        <div class="cover" style="background-color:rgba(48,48,48,0.75);padding-top:50%;">
+                            <h3 class="name">Akshay Halbe</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 item">
+                    <div class="box" style="background-image:url(&quot;assets/img/&quot;);border-radius:0.5rem;">
+                        <div class="cover" style="background-color:rgba(48,48,48,0.75);padding-top:50%;">
+                            <h3 class="name">Akash Solanki</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 item">
+                    <div class="box" style="background-image:url(&quot;assets/img/&quot;);border-radius:0.5rem;">
+                        <div class="cover" style="background-color:rgba(48,48,48,0.75);padding-top:50%;">
+                            <h3 class="name">Aniruddha Talange&nbsp;</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 item">
+                    <div class="box" style="background-image:url(&quot;assets/img/&quot;);border-radius:0.5rem;">
+                        <div class="cover" style="background-color:rgba(48,48,48,0.75);padding-top:50%;">
+                            <h3 class="name">Ashray Gadekar</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 item">
+                    <div class="box" style="background-image:url(&quot;assets/img/&quot;);border-radius:0.5rem;">
+                        <div class="cover" style="background-color:rgba(48,48,48,0.75);padding-top:50%;">
+                            <h3 class="name">Arnav Mudalik</h3>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-6 col-sm-6 col-md-4 col-lg-3 item">
+                    <div class="box" style="border-radius:0.5rem;">
+                        <div class="cover" style="background-color:rgba(48,48,48,0.75);padding-top:50%;">
+                            <h3 class="name">Gaurav Chide</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 offset-xl-0 item">
+                    <div class="box" style="background-image:url(&quot;assets/img/&quot;);border-radius:0.5rem;">
+                        <div class="cover" style="background-color:rgba(48,48,48,0.75);padding-top:50%;">
+                            <h3 class="name">Neeraj Khandekar</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 item">
+                    <div class="box" style="background-image:url(&quot;assets/img/&quot;);border-radius:0.5rem;">
+                        <div class="cover" style="background-color:rgba(48,48,48,0.75);padding-top:50%;">
+                            <h3 class="name">Rutuja Kapote</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 item">
+                    <div class="box" style="background-image:url(&quot;assets/img/&quot;);border-radius:0.5rem;">
+                        <div class="cover" style="background-color:rgba(48,48,48,0.75);padding-top:50%;">
+                            <h3 class="name">Samihan Kulkarni</h3>
+                        </div>
+                    </div>
+                </div>
