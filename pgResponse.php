@@ -67,6 +67,36 @@ $(window).load(function() {
 }, 1000);
 	});
 </script>
+<style>@media (max-width: 992px) {
+
+    .navbar-collapse.collapsing .navbar-nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: -45%;
+        transition: all 0.2s ease-out;
+        padding-top:10vh;
+        padding-left:10vw;
+    }
+
+    .navbar-collapse.show .navbar-nav {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        flex-direction: column;
+        height: auto;
+        width: 70%;
+        transition: right 0.2s ease-in;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        background-color:#000000;
+        z-index:100;
+        padding-top:10vh;
+        padding-left:10vw;
+    }
+}
+</style>
 </head>
 <div class="se-pre-con"></div>
 <body style="background-color:rgb(0,0,0);color:rgb(255,255,255);overflow-wrap: break-word;">

@@ -82,8 +82,20 @@ $sent = mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");}
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 <style>
+@media (max-width: 768px) {
+    .se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(assets/img/display_loading1.gif) center no-repeat #fff;
+	background-color: #919191;}
+}
     .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+@media (min-width: 768px) {
 .se-pre-con {
 	position: fixed;
 	left: 0px;
@@ -93,6 +105,7 @@ $sent = mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");}
 	z-index: 9999;
 	background: url(assets/img/display_loading.gif) center no-repeat #fff;
 	background-color: #919191;
+}
 }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -105,6 +118,36 @@ $(window).load(function() {
 }, 1000);
 	});
 </script>
+<style>@media (max-width: 768px) {
+
+    .navbar-collapse.collapsing .navbar-nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: -45%;
+        transition: all 0.2s ease-out;
+        padding-top:10vh;
+        padding-left:10vw;
+    }
+
+    .navbar-collapse.show .navbar-nav {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        flex-direction: column;
+        height: auto;
+        width: 70%;
+        transition: right 0.2s ease-in;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        background-color:#000000;
+        z-index:100;
+        padding-top:10vh;
+        padding-left:10vw;
+    }
+}
+</style>
 <title>STES Racing | Formula SAE Team</title>
 </head>
 <div class="se-pre-con"></div>
@@ -113,13 +156,11 @@ $(window).load(function() {
         <div class="header-dark" style="background-image:url(&quot;assets/img/IMG_20180714_1508361.jpg&quot;);height:100vh;color:rgb(255,255,255);background-position:center;">
             <div style="height:100vh;background-color:rgba(0,0,0,0.5);">
                 <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
-                    <div class="container-fluid"><a class="navbar-brand" href="/"><img src="assets/img/Logo White.png" alt="STES Racing Logo" width="100%" style="height:32px;width:auto;"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1" style="border:none;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="container-fluid"><a class="navbar-brand" href="/"><img src="assets/img/Logo White.png" alt="STES Racing Logo" width="100%" style="height:calc(24px + 0.5vw);width:auto;"></a><button class="navbar-toggler" style="z-index:101;border:0px;outline: none !important;" data-toggle="collapse" data-target="#navcol-1" style="border:none;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                         <div
                             class="collapse navbar-collapse" id="navcol-1">
                             <ul class="nav navbar-nav"></ul>
-                            <form class="form-inline mr-auto" target="_self">
-                                <div class="form-group"><label for="search-field"></label></div>
-                            </form><span class="navbar-text"></span>
+                            <div class="form-group mr-auto"></div>
                             <ul class="nav navbar-nav">
                                 <li class="nav-item" role="presentation"><a class="nav-link" href="about-us" style="color:rgb(255,255,255);">ABOUT US</a></li>
                                 <li class="nav-item" role="presentation"><a class="nav-link" href="Team">TEAM</a></li>

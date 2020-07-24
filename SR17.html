@@ -43,8 +43,20 @@
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 <style>
+@media (max-width: 768px) {
+    .se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(assets/img/display_loading1.gif) center no-repeat #fff;
+	background-color: #919191;}
+}
     .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+@media (min-width: 768px) {
 .se-pre-con {
 	position: fixed;
 	left: 0px;
@@ -54,6 +66,7 @@
 	z-index: 9999;
 	background: url(assets/img/display_loading.gif) center no-repeat #fff;
 	background-color: #919191;
+}
 }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -66,20 +79,49 @@ $(window).load(function() {
 }, 1000);
 	});
 </script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<style>@media (max-width: 768px) {
+
+    .navbar-collapse.collapsing .navbar-nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: -45%;
+        transition: all 0.2s ease-out;
+        padding-top:10vh;
+        padding-left:10vw;
+    }
+
+    .navbar-collapse.show .navbar-nav {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        flex-direction: column;
+        height: auto;
+        width: 70%;
+        transition: right 0.2s ease-in;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        background-color:#000000;
+        z-index:100;
+        padding-top:10vh;
+        padding-left:10vw;
+    }
+}
+</style>
 </head>
 <div class="se-pre-con"></div>
 <body style="background-color:rgb(0,0,0);overflow-wrap: break-word;">
     <div>
-        <div class="header-dark" style="background-image:url(&quot;assets/img/0b845905163637dba2b96b6d08914fbd563d23c2_s2_n2.jpg&quot;);height:45vh;color:rgb(255,255,255);background-position:center;">
-            <div style="height:45vh;background-color:rgba(0,0,0,0.5);">
+        <div class="header-dark" style="background-image:url(&quot;assets/img/0b845905163637dba2b96b6d08914fbd563d23c2_s2_n2.jpg&quot;);height:40vh;color:rgb(255,255,255);background-position:center;">
+            <div style="height:40vh;background-color:rgba(0,0,0,0.5);">
                 <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
-                    <div class="container-fluid"><a class="navbar-brand" href="/"><img src="assets/img/Logo White.png" alt="STES Racing Logo" width="100%" style="height:32px;width:auto;"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1" style="border:none;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="container-fluid"><a class="navbar-brand" href="/"><img src="assets/img/Logo White.png" alt="STES Racing Logo" width="100%" style="height:calc(24px + 0.5vw);width:auto;"></a><button class="navbar-toggler" style="z-index:101;border:0px;outline: none !important;" data-toggle="collapse" data-target="#navcol-1" style="border:none;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                         <div
                             class="collapse navbar-collapse" id="navcol-1">
                             <ul class="nav navbar-nav"></ul>
-                            <form class="form-inline mr-auto" target="_self">
-                                <div class="form-group"><label for="search-field"></label></div>
-                            </form><span class="navbar-text"></span>
+                            <div class="form-group mr-auto"></div>
                             <ul class="nav navbar-nav">
                                 <li class="nav-item" role="presentation"><a class="nav-link" href="About-us">ABOUT US</a></li>
                                 <li class="nav-item" role="presentation"><a class="nav-link" href="Team">TEAM</a></li>
@@ -95,9 +137,9 @@ $(window).load(function() {
     </div>
     </div>
     <div class="container-fluid">
-        <h1 class="text-center" style="color:rgb(255,255,255);font-size:7vh;padding-top:5vh;letter-spacing:3px;"><strong>SR 17: 2016-2017</strong></h1>
+        <h1 data-aos="fade-up" data-aos-easing="linear" data-aos-duration="750" class="text-center" style="color:rgb(255,255,255);font-size:7vh;padding-top:5vh;letter-spacing:3px;"><strong>SR 17: 2016-2017</strong></h1>
         <p class="text-center" style="color:rgb(255,255,255);font-size:3vh;"></p>
-        <div class="row" style="padding-top:10vh;padding-bottom:10vh;">
+        <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="750" class="row" style="padding-top:10vh;padding-bottom:10vh;">
             <div class="col-sm-5 col-md-4 col-lg-3 col-xl-3 offset-sm-0 offset-md-1 offset-lg-1 offset-xl-2 align-self-center" style="padding-bottom:4vh;">
                 <h1 class="text-center" style="color:rgb(255,255,255);font-size:3vh;">ENGINE AND DRIVETRAIN</h1>
             </div>
@@ -108,7 +150,7 @@ $(window).load(function() {
                 <p class="text-left" style="color:rgb(255,255,255);font-size:2vh;">KTM DUKE 390<br>32.06 kW<br>35 Nm<br>9500 Rpm<br>7500 Rpm<br>Torsen Limited Slip Differential,1:3 Torque biasing<br></p>
             </div>
         </div>
-        <div class="row" style="padding-bottom:10vh;">
+        <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="750" class="row" style="padding-bottom:10vh;">
             <div class="col-sm-5 col-md-4 col-lg-3 col-xl-3 offset-md-1 offset-lg-1 offset-xl-2 align-self-center" style="padding-bottom:4vh;">
                 <h1 class="text-center" style="color:rgb(255,255,255);font-size:3vh;">DIMENTIONS AND WEIGHT</h1>
             </div>
@@ -119,7 +161,7 @@ $(window).load(function() {
                 <p class="text-left" style="font-size:2vh;color:rgb(255,255,255);">2880 mm<br>1500 mm<br>1080 mm<br>1587 mm<br>1292 mm<br>1188 mm<br>202 Kg<br>45% Front<br></p>
             </div>
         </div>
-        <div class="row" style="padding-bottom:10vh;">
+        <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="750" class="row" style="padding-bottom:10vh;">
             <div class="col-sm-5 col-md-4 col-lg-3 col-xl-3 offset-md-1 offset-lg-1 offset-xl-2 align-self-center" style="padding-bottom:4vh;">
                 <h1 class="text-center" style="color:rgb(255,255,255);font-size:3vh;">WHEELS AND TYRES</h1>
             </div>
@@ -130,7 +172,7 @@ $(window).load(function() {
                 <p class="text-left" style="color:rgb(255,255,255);font-size:2vh;">Hoosier R25B<br>Hoosier R25B<br></p>
             </div>
         </div>
-        <div class="row" style="padding-bottom:10vh;">
+        <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="750" class="row" style="padding-bottom:10vh;">
             <div class="col-sm-5 col-md-4 col-lg-3 col-xl-3 offset-md-1 offset-lg-1 offset-xl-2 align-self-center" style="padding-bottom:4vh;">
                 <h1 class="text-center" style="color:rgb(255,255,255);font-size:3vh;">BRAKING SYSTEM</h1>
             </div>
@@ -141,7 +183,7 @@ $(window).load(function() {
                 <p class="text-left" style="color:rgb(255,255,255);font-size:2vh;">Floating ,SS420,Vented<br>Tandem, 3/4th<br>Aluminium,BYBRE Caliper 4-Piston,BYBRE<br>Asbestos/Lead+Nickle Free<br></p>
             </div>
         </div>
-        <div class="row" style="padding-bottom:10vh;">
+        <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="750" class="row" style="padding-bottom:10vh;">
             <div class="col-sm-5 col-md-4 col-lg-3 col-xl-3 offset-md-1 offset-lg-1 offset-xl-2 align-self-center" style="padding-bottom:4vh;">
                 <h1 class="text-center" style="color:rgb(255,255,255);font-size:3vh;">PERFORMANCE</h1>
             </div>
@@ -185,5 +227,9 @@ $(window).load(function() {
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/script.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

@@ -43,8 +43,20 @@
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 <style>
+@media (max-width: 768px) {
+    .se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(assets/img/display_loading1.gif) center no-repeat #fff;
+	background-color: #919191;}
+}
     .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+@media (min-width: 768px) {
 .se-pre-con {
 	position: fixed;
 	left: 0px;
@@ -54,6 +66,7 @@
 	z-index: 9999;
 	background: url(assets/img/display_loading.gif) center no-repeat #fff;
 	background-color: #919191;
+}
 }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -67,6 +80,43 @@ $(window).load(function() {
 }, 1000);
 	});
 </script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<style>@media (max-width: 768px) {
+
+    .navbar-collapse.collapsing .navbar-nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: -45%;
+        transition: all 0.2s ease-out;
+        padding-top:10vh;
+        padding-left:10vw;
+    }
+
+    .navbar-collapse.show .navbar-nav {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        flex-direction: column;
+        height: auto;
+        width: 70%;
+        transition: right 0.2s ease-in;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        background-color:#000000;
+        z-index:100;
+        padding-top:10vh;
+        padding-left:10vw;
+    }
+    .g-recaptcha{
+    width: 190px;
+    border-radius: 0.5rem;
+    border-right: 1px solid #d8d8d8;
+    overflow: hidden;
+    }
+}
+</style>
 </head>
 <div class="se-pre-con"></div>
 <body style="background-color:rgb(0,0,0);overflow-wrap: break-word;">
@@ -74,13 +124,11 @@ $(window).load(function() {
         <div class="header-dark" style="color:rgb(255,255,255);height:100vh;background-image:url(&quot;assets/img/Quote.png&quot;);background-position:center;background-size:contain;background-repeat:no-repeat;background-color:rgb(0,0,0);">
             <div style="background-color:rgba(0,0,0,0.5);height:100vh;">
                 <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
-                    <div class="container-fluid"><a class="navbar-brand" href="/"><img src="assets/img/Logo White.png" alt="STES Racing Logo" width="100%" style="height:30px;width:auto;"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1" style="border:none;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="container-fluid"><a class="navbar-brand" href="/"><img src="assets/img/Logo White.png" alt="STES Racing Logo" width="100%" style="height:calc(24px + 0.5vw);width:auto;"></a><button class="navbar-toggler" style="z-index:101;border:0px;outline: none !important;" data-toggle="collapse" data-target="#navcol-1" style="border:none;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                         <div
                             class="collapse navbar-collapse" id="navcol-1">
                             <ul class="nav navbar-nav"></ul>
-                            <form class="form-inline mr-auto" target="_self">
-                                <div class="form-group"><label for="search-field"></label></div>
-                            </form><span class="navbar-text"></span>
+                            <div class="form-group mr-auto"></div>
                             <ul class="nav navbar-nav">
                                 <li class="nav-item" role="presentation"><a class="nav-link" href="About-us">ABOUT US</a></li>
                                 <li class="nav-item" role="presentation"><a class="nav-link" href="Team">TEAM</a></li>
@@ -117,18 +165,18 @@ $(window).load(function() {
     </div>
                 <div class="map-clean" style="background-color:rgb(0,0,0);padding-bottom:5vh;">
         <div class="container">
-            <h2 class="text-center" style="font-size:calc(1em + 5vw);color:rgb(255,255,255);">OUR WORKSHOP<br></h2>
-                            <p class="text-center" style="color:rgb(255,255,255);font-size:2vh;">Lets Meet, Interact, and Exchange knowledge at our workshop.</p>
+            <h2 data-aos="fade-up" data-aos-easing="linear" data-aos-duration="750" class="text-center" style="font-size:calc(1em + 5vw);color:rgb(255,255,255);">OUR WORKSHOP<br></h2>
+                            <p data-aos="fade-up" data-aos-easing="linear" data-aos-duration="950" class="text-center" style="color:rgb(255,255,255);font-size:2vh;">Lets Meet, Interact, and Exchange knowledge at our workshop.</p>
             <div class="intro">
             </div>
         </div>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-8 offset-sm-1 offset-md-2 offset-lg-2 offset-xl-2"><iframe allowfullscreen="" frameborder="0" width="100%" height="450" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBHA4uFjHrR-j1eYHeGwJ81AUXL53-wmYA&amp;q=STES+Racing&amp;zoom=15"></iframe></div>
+            <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="750" class="row">
+                <div class="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-8 offset-sm-1 offset-md-2 offset-lg-2 offset-xl-2"><iframe allowfullscreen="" frameborder="0" width="100%" height="450" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBHA4uFjHrR-j1eYHeGwJ81AUXL53-wmYA&amp;q=STES+Racing&amp;zoom=15" style="border-radius: 0.5rem;"></iframe></div>
             </div>
         </div>
     </div>
-    <div class="contact-clean" style="padding:0px;background-color:rgb(0,0,0);">
+    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="750" class="contact-clean" style="padding:0px;background-color:rgb(0,0,0);">
                     <h2 class="text-center" style="color:rgb(255,255,255);font-size:calc(1em + 5vw);">CONTACT US</h2>
         <form action="mail" method="post" onsubmit="return submitUserForm();" style="background-color:rgb(0,0,0);">
             <div class="form-group"><input class="form-control" type="text" style="border-radius: 10px;" name="Name" required="" placeholder="Your Name" maxlength="50" minlength="1" onkeyup="this.value=this.value.replace(/[^\a-zA-Z ']+/,'')" oninvalid="this.setCustomValidity('Please Enter Your Name')" oninput="setCustomValidity('')"></div>
@@ -185,5 +233,9 @@ $(window).load(function() {
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/script.min.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
